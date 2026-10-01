@@ -30,8 +30,7 @@ class _Advanced23PieTouchGrowState extends State<Advanced23PieTouchGrow> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              AspectRatio(
-                aspectRatio: 1.3,
+              Expanded(
                 child: PieChart(
                   PieChartData(
                     sectionsSpace: 4,

@@ -42,26 +42,30 @@ class Advanced34CandlestickCustomTooltip extends StatelessWidget {
                 ),
                 candlestickTouchData: CandlestickTouchData(
                   touchTooltipData: CandlestickTouchTooltipData(
+                    getTooltipColor: (spot) => spot.isUp
+                        ? const Color(0xFF14532D)
+                        : const Color(0xFF7F1D1D),
                     getTooltipItems: (painter, spot, index) {
                       final subida = spot.isUp;
                       return CandlestickTooltipItem(
-                        'Vela ${index + 1}\n'
+                        '${subida ? '▲' : '▼'} Vela ${index + 1} · '
+                        '${subida ? 'al alza' : 'a la baja'}\n'
                         'A:${spot.open.toStringAsFixed(1)}  '
                         'M:${spot.high.toStringAsFixed(1)}\n'
                         'B:${spot.low.toStringAsFixed(1)}  '
                         'C:${spot.close.toStringAsFixed(1)}',
                         textAlign: TextAlign.left,
                         textStyle: TextStyle(
-                          color: subida ? Colors.white : Colors.white,
+                          color: subida
+                              ? Colors.greenAccent.shade400
+                              : Colors.redAccent.shade200,
                           fontSize: 12,
                           fontWeight: FontWeight.bold,
                           height: 1.3,
                         ),
                       );
                     },
-                    tooltipBorder: BorderSide(
-                      color: Colors.indigo.shade400,
-                    ),
+                    tooltipBorder: const BorderSide(color: Colors.white24),
                   ),
                 ),
                 titlesData: const FlTitlesData(

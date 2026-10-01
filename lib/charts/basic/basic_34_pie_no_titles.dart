@@ -21,19 +21,22 @@ class Basic34PieNoTitles extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              AspectRatio(
-                aspectRatio: 1.3,
-                child: PieChart(
-                  PieChartData(
-                    sectionsSpace: 6,
-                    sections: [
-                      for (final (_, _, color) in sections)
-                        PieChartSectionData(
-                          color: color,
-                          radius: 70,
-                          showTitle: false,
-                        ),
-                    ],
+              Expanded(
+                child: AspectRatio(
+                  aspectRatio: 1.3,
+                  child: PieChart(
+                    PieChartData(
+                      sectionsSpace: 6,
+                      sections: [
+                        for (final (_, value, color) in sections)
+                          PieChartSectionData(
+                            value: value,
+                            color: color,
+                            radius: 70,
+                            showTitle: false,
+                          ),
+                      ],
+                    ),
                   ),
                 ),
               ),

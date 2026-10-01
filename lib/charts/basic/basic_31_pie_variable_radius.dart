@@ -19,8 +19,7 @@ class Basic31PieVariableRadius extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              AspectRatio(
-                aspectRatio: 1.3,
+              Expanded(
                 child: PieChart(
                   PieChartData(
                     centerSpaceRadius: 0,

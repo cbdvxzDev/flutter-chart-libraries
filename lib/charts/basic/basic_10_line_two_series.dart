@@ -66,8 +66,7 @@ class Basic10LineTwoSeries extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 16),
-              AspectRatio(
-                aspectRatio: 1.4,
+              Expanded(
                 child: LineChart(
                   LineChartData(
                     minX: 0,

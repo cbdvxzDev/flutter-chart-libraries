@@ -26,8 +26,7 @@ class Basic27PieDonut extends StatelessWidget {
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
               ),
               const SizedBox(height: 16),
-              AspectRatio(
-                aspectRatio: 1.2,
+              Expanded(
                 child: PieChart(
                   PieChartData(
                     centerSpaceRadius: 55,

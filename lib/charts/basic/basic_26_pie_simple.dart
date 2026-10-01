@@ -39,8 +39,7 @@ class Basic26PieSimple extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              AspectRatio(
-                aspectRatio: 1.2,
+              Expanded(
                 child: PieChart(
                   PieChartData(
                     sectionsSpace: 2,

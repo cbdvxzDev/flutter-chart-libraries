@@ -36,8 +36,7 @@ class _Advanced20BarTouchSelectionState
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              AspectRatio(
-                aspectRatio: 1.5,
+              Expanded(
                 child: BarChart(
                   BarChartData(
                     minY: 0,

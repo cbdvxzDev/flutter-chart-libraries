@@ -66,8 +66,7 @@ class Basic36ScatterShapes extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              AspectRatio(
-                aspectRatio: 1.5,
+              Expanded(
                 child: ScatterChart(
                   ScatterChartData(
                     minX: 0,

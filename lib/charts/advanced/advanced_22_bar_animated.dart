@@ -37,8 +37,7 @@ class _Advanced22BarAnimatedState extends State<Advanced22BarAnimated> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              AspectRatio(
-                aspectRatio: 1.5,
+              Expanded(
                 child: BarChart(
                   BarChartData(
                     minY: 0,

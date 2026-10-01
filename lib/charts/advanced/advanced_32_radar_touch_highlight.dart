@@ -34,8 +34,7 @@ class _Advanced32RadarTouchHighlightState
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              AspectRatio(
-                aspectRatio: 1.4,
+              Expanded(
                 child: RadarChart(
                   RadarChartData(
                     radarBorderData: BorderSide(color: Colors.grey.shade400),

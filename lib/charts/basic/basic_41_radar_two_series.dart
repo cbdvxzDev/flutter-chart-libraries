@@ -34,8 +34,7 @@ class Basic41RadarTwoSeries extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              AspectRatio(
-                aspectRatio: 1.2,
+              Expanded(
                 child: RadarChart(
                   RadarChartData(
                     radarShape: RadarShape.circle,

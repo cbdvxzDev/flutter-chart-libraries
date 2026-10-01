@@ -30,55 +30,90 @@ class Advanced07LineFixedTooltip extends StatelessWidget {
     );
 
     return Scaffold(
-      appBar: AppBar(title: const Text('07. Tooltip fijo sin tocar')),
+      appBar: AppBar(title: const Text('07. Dos tooltips fijos en línea')),
       body: Padding(
         padding: const EdgeInsets.all(24),
         child: Center(
-          child: AspectRatio(
-            aspectRatio: 1.4,
-            child: LineChart(
-              LineChartData(
-                minX: 0,
-                maxX: labels.length - 1,
-                minY: 0,
-                maxY: 100,
-                gridData: const FlGridData(
-                  show: true,
-                  drawVerticalLine: false,
-                  horizontalInterval: 20,
-                ),
-                borderData: FlBorderData(
-                  show: true,
-                  border: Border.all(color: Colors.grey.shade300),
-                ),
-                showingTooltipIndicators: [
-                  ShowingTooltipIndicators([
-                    LineBarSpot(bar, 0, bar.spots[3]),
-                  ]),
-                ],
-                lineTouchData: const LineTouchData(enabled: false),
-                titlesData: FlTitlesData(
-                  topTitles: const AxisTitles(),
-                  rightTitles: const AxisTitles(),
-                  leftTitles: const AxisTitles(
-                    sideTitles: SideTitles(
-                      showTitles: true,
-                      reservedSize: 40,
-                      interval: 20,
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Expanded(
+                child: AspectRatio(
+                  aspectRatio: 1.4,
+                  child: LineChart(
+                    LineChartData(
+                      minX: 0,
+                      maxX: labels.length - 1,
+                      minY: 0,
+                      maxY: 100,
+                      gridData: const FlGridData(
+                        show: true,
+                        drawVerticalLine: false,
+                        horizontalInterval: 20,
+                      ),
+                      borderData: FlBorderData(
+                        show: true,
+                        border: Border.all(color: Colors.grey.shade300),
+                      ),
+                      showingTooltipIndicators: [
+                        ShowingTooltipIndicators([
+                          LineBarSpot(bar, 0, bar.spots[3]),
+                        ]),
+                        ShowingTooltipIndicators([
+                          LineBarSpot(bar, 0, bar.spots[5]),
+                        ]),
+                      ],
+                      lineTouchData: LineTouchData(
+                        enabled: false,
+                        touchTooltipData: LineTouchTooltipData(
+                          getTooltipColor: (touchedSpot) => touchedSpot.y >= 60
+                              ? Colors.indigo.shade700
+                              : Colors.deepOrange.shade700,
+                          getTooltipItems: (touchedSpots) => [
+                            for (final spot in touchedSpots)
+                              LineTooltipItem(
+                                '${labels[spot.x.toInt()]}: ${spot.y.toInt()} k',
+                                const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                          ],
+                        ),
+                      ),
+                      titlesData: FlTitlesData(
+                        topTitles: const AxisTitles(),
+                        rightTitles: const AxisTitles(),
+                        leftTitles: const AxisTitles(
+                          sideTitles: SideTitles(
+                            showTitles: true,
+                            reservedSize: 40,
+                            interval: 20,
+                          ),
+                        ),
+                        bottomTitles: AxisTitles(
+                          sideTitles: SideTitles(
+                            showTitles: true,
+                            reservedSize: 30,
+                            interval: 1,
+                            getTitlesWidget: bottomTitle,
+                          ),
+                        ),
+                      ),
+                      lineBarsData: [bar],
                     ),
                   ),
-                  bottomTitles: AxisTitles(
-                    sideTitles: SideTitles(
-                      showTitles: true,
-                      reservedSize: 30,
-                      interval: 1,
-                      getTitlesWidget: bottomTitle,
-                    ),
-                  ),
                 ),
-                lineBarsData: [bar],
               ),
-            ),
+              const SizedBox(height: 12),
+              const Text(
+                'showingTooltipIndicators con dos grupos → dos tooltips '
+                'fijos · getTooltipItems y getTooltipColor personalizados',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 13, color: Colors.black54),
+              ),
+            ],
           ),
         ),
       ),
