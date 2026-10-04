@@ -6,8 +6,8 @@ class Basic20BarRounded extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Lun', 'Mar', 'Mié', 'Jue', 'Vie'];
-    const List<double> values = [120, 95, 140, 110, 165];
+    const labels = ['Ávila', 'Burgos', 'León', 'Segovia', 'Soria'];
+    const List<double> values = [135, 108, 156, 124, 171];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {
@@ -61,7 +61,7 @@ class Basic20BarRounded extends StatelessWidget {
                       barRods: [
                         BarChartRodData(
                           toY: values[i],
-                          color: Colors.indigo,
+                          color: Colors.pink,
                           width: 22,
                           borderRadius: const BorderRadius.vertical(
                             top: Radius.circular(10),

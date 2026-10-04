@@ -11,8 +11,8 @@ class Advanced20BarTouchSelection extends StatefulWidget {
 
 class _Advanced20BarTouchSelectionState
     extends State<Advanced20BarTouchSelection> {
-  static const labels = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'];
-  static const List<double> values = [42, 55, 48, 62, 57, 71];
+  static const labels = ['Café', 'Té', 'Zumo', 'Agua', 'Refresco', 'Leche'];
+  static const List<double> values = [47, 62, 55, 78, 69, 84];
 
   int? _selected;
 
@@ -90,7 +90,7 @@ class _Advanced20BarTouchSelectionState
                               width: 20,
                               color: _selected == i
                                   ? Colors.deepOrange
-                                  : Colors.indigo,
+                                  : Colors.cyan,
                               borderRadius: const BorderRadius.vertical(
                                 top: Radius.circular(6),
                               ),

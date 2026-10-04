@@ -9,13 +9,13 @@ class Advanced24PieGradient extends StatefulWidget {
 }
 
 class _Advanced24PieGradientState extends State<Advanced24PieGradient> {
-  static const labels = ['Ana', 'Luis', 'Marta', 'Diego'];
-  static const List<double> values = [30, 25, 25, 20];
+  static const labels = ['Sara', 'Pablo', 'Nora', 'Iván'];
+  static const List<double> values = [34, 26, 22, 18];
   static const gradients = [
-    [Color(0xFF5C6BC0), Color(0xFF1A237E)],
-    [Color(0xFF4DB6AC), Color(0xFF00695C)],
-    [Color(0xFFFFB74D), Color(0xFFE65100)],
-    [Color(0xFFF06292), Color(0xFFAD1457)],
+    [Color(0xFF26C6DA), Color(0xFF00838F)],
+    [Color(0xFF9CCC65), Color(0xFF33691E)],
+    [Color(0xFFEC407A), Color(0xFFAD1457)],
+    [Color(0xFF7E57C2), Color(0xFF4527A0)],
   ];
 
   int _tocada = -1;

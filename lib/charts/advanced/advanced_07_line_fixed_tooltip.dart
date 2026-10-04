@@ -6,8 +6,8 @@ class Advanced07LineFixedTooltip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'];
-    const List<double> values = [42, 55, 48, 62, 57, 71];
+    const labels = ['Sem1', 'Sem2', 'Sem3', 'Sem4', 'Sem5', 'Sem6'];
+    const List<double> values = [54, 61, 68, 64, 72, 79];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {
@@ -24,7 +24,7 @@ class Advanced07LineFixedTooltip extends StatelessWidget {
         for (var i = 0; i < labels.length; i++)
           FlSpot(i.toDouble(), values[i]),
       ],
-      color: Colors.indigo,
+      color: Colors.pink,
       barWidth: 3,
       dotData: const FlDotData(show: true),
     );
@@ -67,7 +67,7 @@ class Advanced07LineFixedTooltip extends StatelessWidget {
                         enabled: false,
                         touchTooltipData: LineTouchTooltipData(
                           getTooltipColor: (touchedSpot) => touchedSpot.y >= 60
-                              ? Colors.indigo.shade700
+                              ? Colors.pink.shade700
                               : Colors.deepOrange.shade700,
                           getTooltipItems: (touchedSpots) => [
                             for (final spot in touchedSpots)

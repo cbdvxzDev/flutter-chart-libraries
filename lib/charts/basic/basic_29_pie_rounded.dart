@@ -6,8 +6,8 @@ class Basic29PieRounded extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const List<double> values = [40.0, 30, 18, 12];
-    const colors = [Colors.indigo, Colors.teal, Colors.orange, Colors.pink];
+    const List<double> values = [46.0, 24, 18, 12];
+    const colors = [Colors.orange, Colors.indigo, Colors.red, Colors.blueGrey];
 
     return Scaffold(
       appBar: AppBar(title: const Text('29. Pastel con esquinas redondeadas')),

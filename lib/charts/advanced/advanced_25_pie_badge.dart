@@ -7,8 +7,13 @@ class Advanced25PieBadge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const labels = ['Electrónica', 'Ropa', 'Deportes', 'Libros'];
-    const List<double> values = [40, 25, 20, 15];
-    const colors = [Colors.indigo, Colors.teal, Colors.orange, Colors.brown];
+    const List<double> values = [44, 26, 17, 13];
+    const colors = [
+      Colors.deepOrange,
+      Colors.blueGrey,
+      Colors.lime,
+      Colors.amber,
+    ];
 
     return Scaffold(
       appBar: AppBar(title: const Text('25. Torta con insignias (badges)')),

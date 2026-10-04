@@ -6,8 +6,8 @@ class Advanced04LineHRange extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'];
-    const List<double> values = [42, 55, 48, 62, 57, 71];
+    const labels = ['00', '04', '08', '12', '16', '20'];
+    const List<double> values = [55, 48, 62, 71, 66, 58];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {
@@ -80,7 +80,7 @@ class Advanced04LineHRange extends StatelessWidget {
                       for (var i = 0; i < labels.length; i++)
                         FlSpot(i.toDouble(), values[i]),
                     ],
-                    color: Colors.indigo,
+                    color: Colors.green,
                     barWidth: 3,
                     dotData: const FlDotData(show: false),
                   ),

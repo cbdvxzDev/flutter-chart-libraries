@@ -137,7 +137,7 @@ class _Advanced18BarRotatedLabelState extends State<Advanced18BarRotatedLabel> {
                               fromY: 0,
                               toY: completado[i],
                               width: 26,
-                              color: Colors.indigo,
+                              color: Colors.purple,
                               borderRadius: BorderRadius.zero,
                               borderSide: _selected == i
                                   ? const BorderSide(
@@ -173,7 +173,7 @@ class _Advanced18BarRotatedLabelState extends State<Advanced18BarRotatedLabel> {
                 runSpacing: 6,
                 alignment: WrapAlignment.center,
                 children: const [
-                  _Legend(color: Colors.indigo, label: 'Completado'),
+                  _Legend(color: Colors.purple, label: 'Completado'),
                   _Legend(color: Colors.blueGrey, label: 'Pendiente'),
                 ],
               ),

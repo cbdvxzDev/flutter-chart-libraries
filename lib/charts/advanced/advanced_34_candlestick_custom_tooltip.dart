@@ -5,16 +5,16 @@ class Advanced34CandlestickCustomTooltip extends StatelessWidget {
   const Advanced34CandlestickCustomTooltip({super.key});
 
   static List<CandlestickSpot> get spots => [
-        CandlestickSpot(x: 0, open: 50, high: 56, low: 47, close: 54),
-        CandlestickSpot(x: 1, open: 54, high: 58, low: 50, close: 51),
-        CandlestickSpot(x: 2, open: 51, high: 62, low: 49, close: 60),
-        CandlestickSpot(x: 3, open: 60, high: 63, low: 55, close: 57),
-        CandlestickSpot(x: 4, open: 57, high: 66, low: 56, close: 65),
-        CandlestickSpot(x: 5, open: 65, high: 68, low: 60, close: 62),
-        CandlestickSpot(x: 6, open: 62, high: 74, low: 61, close: 72),
-        CandlestickSpot(x: 7, open: 72, high: 75, low: 66, close: 68),
-        CandlestickSpot(x: 8, open: 68, high: 79, low: 67, close: 77),
-        CandlestickSpot(x: 9, open: 77, high: 80, low: 71, close: 73),
+        CandlestickSpot(x: 0, open: 45, high: 52, low: 44, close: 51),
+        CandlestickSpot(x: 1, open: 51, high: 54, low: 47, close: 48),
+        CandlestickSpot(x: 2, open: 48, high: 55, low: 46, close: 54),
+        CandlestickSpot(x: 3, open: 54, high: 58, low: 51, close: 52),
+        CandlestickSpot(x: 4, open: 52, high: 59, low: 50, close: 58),
+        CandlestickSpot(x: 5, open: 58, high: 62, low: 55, close: 56),
+        CandlestickSpot(x: 6, open: 56, high: 63, low: 53, close: 62),
+        CandlestickSpot(x: 7, open: 62, high: 67, low: 60, close: 64),
+        CandlestickSpot(x: 8, open: 64, high: 69, low: 61, close: 66),
+        CandlestickSpot(x: 9, open: 66, high: 72, low: 63, close: 70),
       ];
 
   @override

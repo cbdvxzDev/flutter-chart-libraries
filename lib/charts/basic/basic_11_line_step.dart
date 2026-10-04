@@ -7,7 +7,7 @@ class Basic11LineStep extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const labels = ['08:00', '10:00', '12:00', '14:00', '16:00', '18:00'];
-    const List<double> values = [12.0, 18, 15, 24, 21, 30];
+    const List<double> values = [9, 16, 21, 19, 27, 32];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {

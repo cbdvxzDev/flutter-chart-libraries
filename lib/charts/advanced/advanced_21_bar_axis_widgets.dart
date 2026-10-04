@@ -10,8 +10,15 @@ class Advanced21BarAxisWidgets extends StatefulWidget {
 }
 
 class _Advanced21BarAxisWidgetsState extends State<Advanced21BarAxisWidgets> {
-  static const labels = ['Web', 'App', 'Tienda', 'Email', 'Social', 'Retail'];
-  static const List<double> values = [64, 88, 52, 96, 73, 58];
+  static const labels = [
+    'Portal',
+    'Celular',
+    'Local',
+    'Correo',
+    'Chat',
+    'Mercado',
+  ];
+  static const List<double> values = [61, 84, 57, 92, 76, 69];
   static const icons = [
     Icons.language,
     Icons.phone_iphone,
@@ -191,7 +198,7 @@ class _Advanced21BarAxisWidgetsState extends State<Advanced21BarAxisWidgets> {
                               width: 26,
                               color: _tocada == i
                                   ? Colors.deepOrange
-                                  : Colors.indigo,
+                                  : Colors.indigoAccent,
                               borderRadius: const BorderRadius.vertical(
                                 top: Radius.circular(6),
                               ),

@@ -6,8 +6,13 @@ class Basic33PieBorders extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const List<double> values = [38.0, 27, 20, 15];
-    const colors = [Colors.indigo, Colors.teal, Colors.orange, Colors.pink];
+    const List<double> values = [36.0, 29, 21, 14];
+    const colors = [
+      Colors.blueGrey,
+      Colors.orange,
+      Colors.green,
+      Colors.purple,
+    ];
 
     return Scaffold(
       appBar: AppBar(title: const Text('33. Pastel con bordes')),

@@ -1,4 +1,4 @@
-﻿import 'package:fl_chart/fl_chart.dart';
+import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
 class Basic07LineDotShapes extends StatelessWidget {
@@ -6,8 +6,8 @@ class Basic07LineDotShapes extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'];
-    const List<double> values = [40.0, 55, 48, 70, 64, 82];
+    const labels = ['Item1', 'Item2', 'Item3', 'Item4', 'Item5', 'Item6'];
+    const List<double> values = [35, 52, 60, 74, 68, 88];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {
@@ -62,7 +62,7 @@ class Basic07LineDotShapes extends StatelessWidget {
                       for (var i = 0; i < values.length; i++)
                         FlSpot(i.toDouble(), values[i]),
                     ],
-                    color: Colors.indigo,
+                    color: Colors.pink,
                     barWidth: 2,
                     dotData: FlDotData(
                       show: true,
@@ -70,7 +70,7 @@ class Basic07LineDotShapes extends StatelessWidget {
                           index.isEven
                               ? FlDotSquarePainter(
                                   size: 12,
-                                  color: Colors.indigo,
+                                  color: Colors.pink,
                                   strokeColor: Colors.white,
                                   strokeWidth: 2,
                                 )

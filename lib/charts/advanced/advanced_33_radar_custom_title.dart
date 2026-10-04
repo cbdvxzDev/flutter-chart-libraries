@@ -101,8 +101,8 @@ class _Advanced33RadarCustomTitleState extends State<Advanced33RadarCustomTitle>
                         dataEntries: [
                           for (final v in values) RadarEntry(value: v),
                         ],
-                        fillColor: Colors.indigo.withValues(alpha: 0.4),
-                        borderColor: const Color(0xFF283593),
+                        fillColor: Colors.lightBlue.withValues(alpha: 0.4),
+                        borderColor: const Color(0xFF01579B),
                         borderWidth: 2,
                         entryRadius: tocada == null ? 4 : 6,
                       ),

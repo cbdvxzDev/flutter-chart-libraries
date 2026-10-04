@@ -14,39 +14,45 @@ class _Advanced27ScatterFixedTooltipState
   static const nombres = ['edge-1', 'edge-2', 'srv-a', 'srv-b', 'srv-c'];
   static final List<ScatterSpot> puntos = [
     ScatterSpot(
-      0.4,
-      9.6,
-      dotPainter: FlDotCirclePainter(
-        radius: 15,
-        color: Colors.deepOrange,
-        strokeWidth: 2,
-        strokeColor: Colors.white,
-      ),
-    ),
-    ScatterSpot(
-      9.6,
       0.5,
+      9.4,
       dotPainter: FlDotCirclePainter(
         radius: 15,
-        color: Colors.deepOrange,
+        color: Colors.red.shade600,
         strokeWidth: 2,
         strokeColor: Colors.white,
       ),
     ),
     ScatterSpot(
-      4.2,
-      5.4,
-      dotPainter: FlDotCirclePainter(radius: 9, color: Colors.indigo),
+      9.5,
+      0.6,
+      dotPainter: FlDotCirclePainter(
+        radius: 15,
+        color: Colors.red.shade600,
+        strokeWidth: 2,
+        strokeColor: Colors.white,
+      ),
     ),
     ScatterSpot(
-      6.8,
-      7.2,
-      dotPainter: FlDotCirclePainter(radius: 9, color: Colors.indigo),
+      4.4,
+      6.7,
+      dotPainter: FlDotCirclePainter(
+        radius: 9,
+        color: Colors.lightBlue.shade700,
+      ),
     ),
     ScatterSpot(
-      3.1,
-      3.4,
-      dotPainter: FlDotCirclePainter(radius: 9, color: Colors.teal),
+      7.6,
+      3.2,
+      dotPainter: FlDotCirclePainter(
+        radius: 9,
+        color: Colors.lightBlue.shade700,
+      ),
+    ),
+    ScatterSpot(
+      2.8,
+      4.1,
+      dotPainter: FlDotCirclePainter(radius: 9, color: Colors.teal.shade600),
     ),
   ];
 
@@ -111,8 +117,8 @@ class _Advanced27ScatterFixedTooltipState
                       },
                       touchTooltipData: ScatterTouchTooltipData(
                         getTooltipColor: (spot) => _indice(spot) < 2
-                            ? Colors.deepOrange.shade700
-                            : Colors.indigo.shade700,
+                            ? Colors.red.shade800
+                            : Colors.lightBlue.shade900,
                         getTooltipItems: (spot) {
                           final i = _indice(spot);
                           return ScatterTooltipItem(
@@ -147,7 +153,7 @@ class _Advanced27ScatterFixedTooltipState
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 12,
-                  color: Colors.deepOrange.shade700,
+                  color: Colors.red.shade700,
                   fontWeight: FontWeight.w600,
                 ),
               ),

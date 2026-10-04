@@ -7,7 +7,7 @@ class Basic06LineDots extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const labels = ['E1', 'E2', 'E3', 'E4', 'E5', 'E6'];
-    const List<double> values = [68.0, 75, 71, 84, 79, 92];
+    const List<double> values = [62, 70, 78, 86, 91, 97];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {

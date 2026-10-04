@@ -19,14 +19,14 @@ class Basic40RadarTicks extends StatelessWidget {
               RadarChartData(
                 radarShape: RadarShape.circle,
                 tickCount: 5,
-                radarBackgroundColor: Colors.indigo.withValues(alpha: 0.05),
-                gridBorderData: const BorderSide(color: Colors.indigo, width: 1.5),
+                radarBackgroundColor: Colors.blueGrey.withValues(alpha: 0.05),
+                gridBorderData: const BorderSide(color: Colors.blueGrey, width: 1.5),
                 tickBorderData: const BorderSide(
-                  color: Colors.indigo,
+                  color: Colors.blueGrey,
                   width: 1,
                 ),
                 radarBorderData: const BorderSide(
-                  color: Colors.indigo,
+                  color: Colors.blueGrey,
                   width: 2,
                 ),
                 ticksTextStyle: const TextStyle(

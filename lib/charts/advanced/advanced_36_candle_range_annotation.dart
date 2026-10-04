@@ -5,16 +5,16 @@ class Advanced36CandlestickRangeAnnotation extends StatelessWidget {
   const Advanced36CandlestickRangeAnnotation({super.key});
 
   static final List<CandlestickSpot> spots = [
-    CandlestickSpot(x: 0, open: 50, high: 56, low: 47, close: 54),
-    CandlestickSpot(x: 1, open: 54, high: 58, low: 50, close: 51),
-    CandlestickSpot(x: 2, open: 51, high: 62, low: 49, close: 60),
-    CandlestickSpot(x: 3, open: 60, high: 63, low: 55, close: 57),
-    CandlestickSpot(x: 4, open: 57, high: 66, low: 56, close: 65),
-    CandlestickSpot(x: 5, open: 65, high: 68, low: 60, close: 62),
-    CandlestickSpot(x: 6, open: 62, high: 74, low: 61, close: 72),
-    CandlestickSpot(x: 7, open: 72, high: 75, low: 66, close: 68),
-    CandlestickSpot(x: 8, open: 68, high: 79, low: 67, close: 77),
-    CandlestickSpot(x: 9, open: 77, high: 80, low: 71, close: 73),
+    CandlestickSpot(x: 0, open: 46, high: 51, low: 44, close: 50),
+    CandlestickSpot(x: 1, open: 50, high: 56, low: 48, close: 55),
+    CandlestickSpot(x: 2, open: 55, high: 60, low: 52, close: 53),
+    CandlestickSpot(x: 3, open: 53, high: 61, low: 51, close: 60),
+    CandlestickSpot(x: 4, open: 60, high: 66, low: 57, close: 64),
+    CandlestickSpot(x: 5, open: 64, high: 70, low: 62, close: 69),
+    CandlestickSpot(x: 6, open: 69, high: 75, low: 66, close: 72),
+    CandlestickSpot(x: 7, open: 72, high: 79, low: 70, close: 78),
+    CandlestickSpot(x: 8, open: 78, high: 83, low: 75, close: 80),
+    CandlestickSpot(x: 9, open: 80, high: 82, low: 74, close: 76),
   ];
 
   @override

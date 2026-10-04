@@ -6,9 +6,9 @@ class Advanced08LineCustomTooltip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'];
-    const List<double> ingresos = [42, 55, 48, 62, 57, 71];
-    const List<double> costos = [30, 36, 33, 41, 38, 44];
+    const labels = ['Cli1', 'Cli2', 'Cli3', 'Cli4', 'Cli5', 'Cli6'];
+    const List<double> ingresos = [71, 64, 78, 69, 82, 76];
+    const List<double> costos = [45, 51, 48, 57, 54, 61];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {
@@ -50,7 +50,7 @@ class Advanced08LineCustomTooltip extends StatelessWidget {
                         final esIngreso = spot.barIndex == 0;
                         final etiqueta = esIngreso ? 'Ingresos' : 'Costos';
                         final color =
-                            esIngreso ? Colors.indigo : Colors.deepOrange;
+                            esIngreso ? Colors.purple : Colors.deepOrange;
                         return LineTooltipItem(
                           '$etiqueta\n${labels[spot.x.toInt()]}: ${spot.y.toInt()} k',
                           TextStyle(
@@ -89,7 +89,7 @@ class Advanced08LineCustomTooltip extends StatelessWidget {
                       for (var i = 0; i < labels.length; i++)
                         FlSpot(i.toDouble(), ingresos[i]),
                     ],
-                    color: Colors.indigo,
+                    color: Colors.purple,
                     barWidth: 3,
                     dotData: const FlDotData(show: false),
                   ),

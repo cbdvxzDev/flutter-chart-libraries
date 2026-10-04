@@ -13,7 +13,7 @@ class _Advanced16BarStackTooltipState
     extends State<Advanced16BarStackTooltip> {
   BarChartRodStackItem? _touchedStack;
 
-  static const labels = ['Web', 'App', 'Tienda'];
+  static const labels = ['Mañana', 'Tarde', 'Noche'];
 
   Widget bottomTitle(double value, TitleMeta meta) {
     if (value < 0 || value >= labels.length || value % 1 != 0) {
@@ -69,11 +69,11 @@ class _Advanced16BarStackTooltipState
                               ),
                             );
                           }
-                          final nombre = tocado.toY <= 45
-                              ? 'Web'
-                              : tocado.toY <= 75
-                                  ? 'App'
-                                  : 'Tienda';
+                          final nombre = tocado.toY <= 38
+                              ? 'Mañana'
+                              : tocado.toY <= 66
+                                  ? 'Tarde'
+                                  : 'Noche';
                           final valor = tocado.toY - tocado.fromY;
                           return BarTooltipItem(
                             '$nombre: ${valor.toInt()}',
@@ -117,18 +117,18 @@ class _Advanced16BarStackTooltipState
                               rodStackItems: [
                                 BarChartRodStackItem(
                                   0,
-                                  45 - i * 4,
-                                  Colors.indigo,
-                                ),
-                                BarChartRodStackItem(
-                                  45 - i * 4,
-                                  75 - i * 6,
+                                  38 - i * 5,
                                   Colors.teal,
                                 ),
                                 BarChartRodStackItem(
-                                  75 - i * 6,
+                                  38 - i * 5,
+                                  66 - i * 7,
+                                  Colors.indigoAccent,
+                                ),
+                                BarChartRodStackItem(
+                                  66 - i * 7,
                                   100 - i * 12,
-                                  Colors.orange,
+                                  Colors.deepOrange,
                                 ),
                               ],
                             ),

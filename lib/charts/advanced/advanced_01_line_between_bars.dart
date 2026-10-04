@@ -6,9 +6,9 @@ class Advanced01LineBetweenBars extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'];
-    const List<double> ventas2024 = [42, 55, 48, 62, 57, 71];
-    const List<double> ventas2025 = [54, 61, 58, 73, 68, 86];
+    const labels = ['Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
+    const List<double> ventas2024 = [61, 57, 66, 72, 69, 78];
+    const List<double> ventas2025 = [74, 71, 80, 85, 83, 91];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {

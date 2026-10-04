@@ -6,8 +6,8 @@ class Basic14LineNoGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'];
-    const List<double> values = [64.0, 72, 69, 81, 77, 90];
+    const labels = ['W1', 'W2', 'W3', 'W4', 'W5', 'W6'];
+    const List<double> values = [66, 74, 72, 83, 79, 92];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {
@@ -53,11 +53,11 @@ class Basic14LineNoGrid extends StatelessWidget {
                       for (var i = 0; i < values.length; i++)
                         FlSpot(i.toDouble(), values[i]),
                     ],
-                    color: Colors.indigo,
+                    color: Colors.blueGrey,
                     barWidth: 3,
                     belowBarData: BarAreaData(
                       show: true,
-                      color: Colors.indigo.withValues(alpha: 0.15),
+                      color: Colors.blueGrey.withValues(alpha: 0.15),
                     ),
                   ),
                 ],

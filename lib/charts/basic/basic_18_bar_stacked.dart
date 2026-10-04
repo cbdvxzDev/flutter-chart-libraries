@@ -6,10 +6,10 @@ class Basic18BarStacked extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Q1', 'Q2', 'Q3', 'Q4'];
-    const List<double> tienda = [30, 34, 32, 38];
-    const List<double> redes = [18, 24, 27, 33];
-    const List<double> retail = [22, 20, 26, 24];
+    const labels = ['Portátil', 'Consola', 'Monitor', 'Impresora'];
+    const List<double> tienda = [28, 36, 31, 41];
+    const List<double> redes = [16, 21, 26, 30];
+    const List<double> retail = [24, 19, 29, 25];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {
@@ -65,16 +65,16 @@ class Basic18BarStacked extends StatelessWidget {
                           toY: tienda[i] + redes[i] + retail[i],
                           width: 24,
                           rodStackItems: [
-                            BarChartRodStackItem(0, tienda[i], Colors.indigo),
+                            BarChartRodStackItem(0, tienda[i], Colors.deepPurple),
                             BarChartRodStackItem(
                               tienda[i],
                               tienda[i] + redes[i],
-                              Colors.teal,
+                              Colors.cyan,
                             ),
                             BarChartRodStackItem(
                               tienda[i] + redes[i],
                               tienda[i] + redes[i] + retail[i],
-                              Colors.orange.shade400,
+                              Colors.amber,
                             ),
                           ],
                         ),

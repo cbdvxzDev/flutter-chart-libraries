@@ -6,8 +6,15 @@ class Basic16BarSimple extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'];
-    const List<double> values = [42, 58, 51, 73, 66, 85];
+    const labels = [
+      'Alameda',
+      'Ribera',
+      'Catedral',
+      'Puerto',
+      'Parque',
+      'Aduana',
+    ];
+    const List<double> values = [35, 67, 48, 84, 59, 76];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {
@@ -61,7 +68,7 @@ class Basic16BarSimple extends StatelessWidget {
                       barRods: [
                         BarChartRodData(
                           toY: values[i],
-                          color: Colors.indigo,
+                          color: Colors.blue,
                           width: 18,
                         ),
                       ],

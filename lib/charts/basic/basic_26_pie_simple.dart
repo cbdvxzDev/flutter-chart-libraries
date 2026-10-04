@@ -7,10 +7,10 @@ class Basic26PieSimple extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const sections = [
-      ('Alimentación', 35.0, Colors.indigo),
-      ('Transporte', 20.0, Colors.teal),
-      ('Vivienda', 25.0, Colors.orange),
-      ('Otros', 20.0, Colors.pink),
+      ('Alimentación', 42.0, Colors.blue),
+      ('Transporte', 23.0, Colors.deepOrange),
+      ('Vivienda', 19.0, Colors.green),
+      ('Entretenimiento', 16.0, Colors.red),
     ];
 
     Widget legendItem(Color color, String label) {

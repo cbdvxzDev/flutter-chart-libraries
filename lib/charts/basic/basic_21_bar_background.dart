@@ -6,8 +6,8 @@ class Basic21BarBackground extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Ana', 'Luis', 'Marta', 'Diego', 'Sofía'];
-    const List<double> values = [78, 64, 91, 55, 83];
+    const labels = ['Águilas', 'Lobos', 'Tigres', 'Osos', 'Zorros'];
+    const List<double> values = [71, 66, 93, 52, 87];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {
@@ -61,7 +61,7 @@ class Basic21BarBackground extends StatelessWidget {
                       barRods: [
                         BarChartRodData(
                           toY: values[i],
-                          color: Colors.teal,
+                          color: Colors.lightBlue,
                           width: 18,
                           backDrawRodData: BackgroundBarChartRodData(
                             show: true,

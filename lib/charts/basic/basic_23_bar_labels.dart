@@ -6,8 +6,8 @@ class Basic23BarLabels extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'];
-    const List<double> values = [42, 58, 51, 73, 66, 85];
+    const labels = ['Free', 'Básico', 'Pro', 'Premium', 'Empresa', 'Elite'];
+    const List<double> values = [38, 64, 55, 79, 47, 88];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {
@@ -61,7 +61,7 @@ class Basic23BarLabels extends StatelessWidget {
                       barRods: [
                         BarChartRodData(
                           toY: values[i],
-                          color: Colors.indigo,
+                          color: Colors.red,
                           width: 18,
                           label: BarChartRodLabel(
                             show: true,

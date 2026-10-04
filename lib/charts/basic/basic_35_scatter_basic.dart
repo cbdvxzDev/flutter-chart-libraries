@@ -26,18 +26,18 @@ class Basic35ScatterBasic extends StatelessWidget {
     }
 
     final spots = [
-      ScatterSpot(10, 30),
-      ScatterSpot(18, 45),
-      ScatterSpot(25, 38),
-      ScatterSpot(30, 55),
-      ScatterSpot(38, 62),
-      ScatterSpot(42, 48),
-      ScatterSpot(48, 70),
-      ScatterSpot(55, 66),
-      ScatterSpot(62, 78),
-      ScatterSpot(68, 72),
-      ScatterSpot(75, 85),
-      ScatterSpot(84, 90),
+      ScatterSpot(8, 22),
+      ScatterSpot(15, 34),
+      ScatterSpot(24, 30),
+      ScatterSpot(33, 52),
+      ScatterSpot(41, 44),
+      ScatterSpot(50, 63),
+      ScatterSpot(58, 58),
+      ScatterSpot(66, 75),
+      ScatterSpot(73, 69),
+      ScatterSpot(81, 88),
+      ScatterSpot(90, 80),
+      ScatterSpot(95, 94),
     ];
 
     return Scaffold(
@@ -89,8 +89,8 @@ class Basic35ScatterBasic extends StatelessWidget {
                       dotPainter: FlDotCirclePainter(
                         radius: 8,
                         color: i.isEven
-                            ? Colors.indigo
-                            : Colors.indigo.withValues(alpha: 0.55),
+                            ? Colors.blue
+                            : Colors.blue.withValues(alpha: 0.55),
                         strokeWidth: 1,
                         strokeColor: Colors.white,
                       ),

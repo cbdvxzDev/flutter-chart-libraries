@@ -1,4 +1,4 @@
-﻿import 'package:fl_chart/fl_chart.dart';
+import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
 class Basic13LineRoundCaps extends StatelessWidget {
@@ -6,8 +6,8 @@ class Basic13LineRoundCaps extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'];
-    const List<double> values = [28.0, 34, 31, 42, 39, 50];
+    const labels = ['L1', 'L2', 'L3', 'L4', 'L5', 'L6'];
+    const List<double> values = [30, 36, 33, 44, 41, 52];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {
@@ -62,7 +62,7 @@ class Basic13LineRoundCaps extends StatelessWidget {
                       for (var i = 0; i < values.length; i++)
                         FlSpot(i.toDouble(), values[i]),
                     ],
-                    color: Colors.teal.shade700,
+                    color: Colors.amber.shade700,
                     barWidth: 6,
                     isStrokeCapRound: true,
                     isStrokeJoinRound: true,

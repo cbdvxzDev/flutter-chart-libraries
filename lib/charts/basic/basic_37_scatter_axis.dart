@@ -28,13 +28,13 @@ class Basic37ScatterAxis extends StatelessWidget {
     }
 
     final spots = [
-      ScatterSpot(2020, 32),
-      ScatterSpot(2021, 41),
-      ScatterSpot(2022, 48),
-      ScatterSpot(2023, 57),
-      ScatterSpot(2024, 66),
-      ScatterSpot(2025, 74),
-      ScatterSpot(2026, 88),
+      ScatterSpot(2020, 26),
+      ScatterSpot(2021, 37),
+      ScatterSpot(2022, 45),
+      ScatterSpot(2023, 59),
+      ScatterSpot(2024, 64),
+      ScatterSpot(2025, 77),
+      ScatterSpot(2026, 93),
     ];
 
     return Scaffold(
@@ -85,7 +85,7 @@ class Basic37ScatterAxis extends StatelessWidget {
                       spot.y,
                       dotPainter: FlDotCirclePainter(
                         radius: 9,
-                        color: Colors.indigo,
+                        color: Colors.green.shade700,
                         strokeWidth: 2,
                         strokeColor: Colors.white,
                       ),

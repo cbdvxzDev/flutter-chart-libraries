@@ -6,8 +6,8 @@ class Basic09LineWidth extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'];
-    const List<double> values = [55.0, 61, 58, 72, 69, 80];
+    const labels = ['A', 'B', 'C', 'D', 'E', 'F'];
+    const List<double> values = [47, 59, 64, 73, 81, 86];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {
@@ -62,7 +62,7 @@ class Basic09LineWidth extends StatelessWidget {
                       for (var i = 0; i < values.length; i++)
                         FlSpot(i.toDouble(), values[i]),
                     ],
-                    color: Colors.indigo,
+                    color: Colors.purple,
                     barWidth: 8,
                     dotData: const FlDotData(show: false),
                   ),

@@ -6,7 +6,14 @@ class Advanced19BarFixedTooltip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
+    const labels = [
+      'Rebajas',
+      'Navidad',
+      'Verano',
+      'Puentes',
+      'Regreso',
+      'Apertura',
+    ];
     const List<double> values = [58, 34, 76, 45, 88, 62];
     const resaltado = 4;
 
@@ -51,7 +58,7 @@ class Advanced19BarFixedTooltip extends StatelessWidget {
                         touchTooltipData: BarTouchTooltipData(
                           getTooltipColor: (group) =>
                               group.barRods.first.toY >= 70
-                                  ? Colors.indigo.shade700
+                                  ? Colors.deepPurple.shade700
                                   : Colors.deepOrange.shade700,
                           getTooltipItem: (group, groupIndex, rod, rodIndex) =>
                               BarTooltipItem(
@@ -96,7 +103,7 @@ class Advanced19BarFixedTooltip extends StatelessWidget {
                                 width: 18,
                                 color: i == resaltado
                                     ? Colors.deepOrange
-                                    : Colors.indigo.withValues(alpha: 0.6),
+                                    : Colors.deepPurple.withValues(alpha: 0.6),
                               ),
                             ],
                           ),

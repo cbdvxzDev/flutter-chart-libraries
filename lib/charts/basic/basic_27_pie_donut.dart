@@ -7,10 +7,10 @@ class Basic27PieDonut extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const sections = [
-      ('Windows', 42.0, Colors.indigo),
-      ('macOS', 22.0, Colors.teal),
-      ('Linux', 18.0, Colors.orange),
-      ('Otros', 18.0, Colors.pink),
+      ('Windows', 38.0, Colors.deepPurple),
+      ('macOS', 26.0, Colors.cyan),
+      ('Linux', 21.0, Colors.amber),
+      ('Otros', 15.0, Colors.blueGrey),
     ];
 
     return Scaffold(
@@ -30,7 +30,7 @@ class Basic27PieDonut extends StatelessWidget {
                 child: PieChart(
                   PieChartData(
                     centerSpaceRadius: 55,
-                    centerSpaceColor: Colors.indigo.shade50,
+                    centerSpaceColor: Colors.deepPurple.shade50,
                     sectionsSpace: 3,
                     sections: [
                       for (final (_, value, color) in sections)

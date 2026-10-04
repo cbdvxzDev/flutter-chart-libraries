@@ -6,14 +6,14 @@ class Basic25BarDashedBorder extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['A', 'B', 'C', 'D', 'E'];
+    const labels = ['Recoger', 'Cargar', 'Trasladar', 'Descargar', 'Entregar'];
     const List<double> values = [48, 72, 60, 90, 55];
     const colors = [
-      Colors.indigo,
-      Colors.teal,
-      Colors.indigo,
-      Colors.orange,
-      Colors.teal,
+      Colors.cyan,
+      Colors.amber,
+      Colors.pink,
+      Colors.green,
+      Colors.blueGrey,
     ];
 
     Widget bottomTitle(double value, TitleMeta meta) {

@@ -6,8 +6,8 @@ class Basic03LineAreaBelow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'];
-    const List<double> values = [120.0, 145, 138, 170, 195, 220];
+    const labels = ['S1', 'S2', 'S3', 'S4', 'S5', 'S6'];
+    const List<double> values = [95, 130, 165, 150, 205, 235];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {
@@ -63,11 +63,11 @@ class Basic03LineAreaBelow extends StatelessWidget {
                         FlSpot(i.toDouble(), values[i]),
                     ],
                     isCurved: true,
-                    color: Colors.indigo,
+                    color: Colors.blue,
                     barWidth: 3,
                     belowBarData: BarAreaData(
                       show: true,
-                      color: Colors.indigo.withValues(alpha: 0.25),
+                      color: Colors.blue.withValues(alpha: 0.25),
                     ),
                   ),
                 ],

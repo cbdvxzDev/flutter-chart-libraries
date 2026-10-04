@@ -6,8 +6,8 @@ class Basic24BarAlignment extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Q1', 'Q2', 'Q3', 'Q4', 'Q5'];
-    const List<double> values = [65, 88, 52, 74, 96];
+    const labels = ['Guitarra', 'Piano', 'Batería', 'Violín', 'Saxofón'];
+    const List<double> values = [69, 87, 54, 78, 95];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {
@@ -63,7 +63,7 @@ class Basic24BarAlignment extends StatelessWidget {
                       barRods: [
                         BarChartRodData(
                           toY: values[i],
-                          color: Colors.indigo,
+                          color: Colors.orange,
                           width: 24,
                           borderRadius: const BorderRadius.vertical(
                             top: Radius.circular(6),

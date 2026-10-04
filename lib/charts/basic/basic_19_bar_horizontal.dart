@@ -6,8 +6,8 @@ class Basic19BarHorizontal extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Ropa', 'Zapatos', 'Celular', 'Muebles', 'Deporte'];
-    const List<double> values = [85, 62, 74, 55, 68];
+    const labels = ['Compras', 'Soporte', 'Producción', 'Logística', 'Diseño'];
+    const List<double> values = [91, 58, 72, 64, 86];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {
@@ -65,7 +65,7 @@ class Basic19BarHorizontal extends StatelessWidget {
                       barRods: [
                         BarChartRodData(
                           toY: values[i],
-                          color: Colors.indigo.shade400,
+                          color: Colors.green,
                           width: 16,
                         ),
                       ],

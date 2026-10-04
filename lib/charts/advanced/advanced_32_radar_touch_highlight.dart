@@ -12,11 +12,11 @@ class Advanced32RadarTouchHighlight extends StatefulWidget {
 class _Advanced32RadarTouchHighlightState
     extends State<Advanced32RadarTouchHighlight> {
   static const labels = [
-    'Ataque',
-    'Defensa',
-    'Velocidad',
-    'Magia',
-    'Resistencia',
+    'Graves',
+    'Medios',
+    'Agudos',
+    'Ritmo',
+    'Volumen',
   ];
   static const List<double> values = [8, 6, 7, 9, 5];
 
@@ -65,8 +65,8 @@ class _Advanced32RadarTouchHighlightState
                         dataEntries: [
                           for (final v in values) RadarEntry(value: v),
                         ],
-                        fillColor: Colors.indigo.withValues(alpha: 0.4),
-                        borderColor: const Color(0xFF3949AB),
+                        fillColor: Colors.brown.withValues(alpha: 0.4),
+                        borderColor: const Color(0xFF5D4037),
                         borderWidth: 2,
                         entryRadius: touched == null ? 4 : 6,
                       ),

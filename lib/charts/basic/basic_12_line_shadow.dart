@@ -6,8 +6,8 @@ class Basic12LineShadow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'];
-    const List<double> values = [35.0, 44, 41, 56, 52, 68];
+    const labels = ['Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago'];
+    const List<double> values = [33, 47, 44, 58, 61, 70];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {

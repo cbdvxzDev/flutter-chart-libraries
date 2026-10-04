@@ -6,8 +6,8 @@ class Basic28PieSectionsSpace extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const List<double> values = [30.0, 25, 25, 20];
-    const colors = [Colors.indigo, Colors.teal, Colors.orange, Colors.purple];
+    const List<double> values = [33.0, 27, 24, 16];
+    const colors = [Colors.purple, Colors.teal, Colors.brown, Colors.pink];
 
     return Scaffold(
       appBar: AppBar(title: const Text('28. Pastel con separación entre secciones')),

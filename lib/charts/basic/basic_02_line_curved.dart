@@ -6,8 +6,8 @@ class Basic02LineCurved extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'];
-    const List<double> values = [16.0, 18, 21, 24, 26, 25];
+    const labels = ['Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
+    const List<double> values = [14, 18, 17, 23, 27, 24];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {

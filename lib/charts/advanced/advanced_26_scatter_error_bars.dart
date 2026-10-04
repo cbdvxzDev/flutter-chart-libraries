@@ -45,29 +45,29 @@ class Advanced26ScatterErrorBars extends StatelessWidget {
                 errorIndicatorData:
                     FlErrorIndicatorData<ScatterChartSpotErrorRangeCallbackInput>(
                   painter: (input) => FlSimpleErrorPainter(
-                    lineColor: Colors.deepPurple,
+                    lineColor: Colors.purple.shade700,
                     lineWidth: 2,
                     capLength: 10,
                   ),
                 ),
                 scatterSpots: [
                   ScatterSpot(
-                    2,
-                    3.5,
-                    xError: const FlErrorRange(lowerBy: 0.6, upperBy: 0.9),
-                    yError: const FlErrorRange(lowerBy: 0.5, upperBy: 0.4),
+                    1.8,
+                    2.6,
+                    xError: const FlErrorRange(lowerBy: 0.7, upperBy: 0.4),
+                    yError: const FlErrorRange(lowerBy: 0.6, upperBy: 0.5),
                   ),
                   ScatterSpot(
-                    5,
-                    6.2,
-                    xError: const FlErrorRange(lowerBy: 0.8, upperBy: 0.4),
-                    yError: const FlErrorRange(lowerBy: 0.7, upperBy: 0.9),
+                    4.6,
+                    7.1,
+                    xError: const FlErrorRange(lowerBy: 0.5, upperBy: 0.9),
+                    yError: const FlErrorRange(lowerBy: 0.8, upperBy: 0.4),
                   ),
                   ScatterSpot(
-                    7.5,
-                    4.4,
-                    xError: const FlErrorRange(lowerBy: 0.5, upperBy: 0.6),
-                    yError: const FlErrorRange(lowerBy: 0.8, upperBy: 0.3),
+                    8.2,
+                    5.3,
+                    xError: const FlErrorRange(lowerBy: 0.9, upperBy: 0.3),
+                    yError: const FlErrorRange(lowerBy: 0.4, upperBy: 0.7),
                   ),
                 ],
               ),

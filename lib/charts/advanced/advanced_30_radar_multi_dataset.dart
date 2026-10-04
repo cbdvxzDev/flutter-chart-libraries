@@ -14,7 +14,7 @@ class _Advanced30RadarMultiDatasetState
   static const labels = ['Fuerza', 'Velocidad', 'Magia', 'Resistencia', 'Astucia'];
 
   static const names = ['Héroe', 'Rival', 'Aliado'];
-  static const colors = [Colors.indigo, Colors.deepOrange, Colors.teal];
+  static const colors = [Colors.blue, Colors.deepOrange, Colors.lime];
   static const List<List<double>> data = [
     [9, 7, 4, 6, 8],
     [5, 9, 8, 4, 6],

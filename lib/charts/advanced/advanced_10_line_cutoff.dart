@@ -6,8 +6,8 @@ class Advanced10LineCutoff extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'];
-    const List<double> values = [42, 55, 48, 74, 66, 58];
+    const labels = ['M1', 'M2', 'M3', 'M4', 'M5', 'M6'];
+    const List<double> values = [68, 74, 65, 81, 77, 72];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {
@@ -84,7 +84,7 @@ class Advanced10LineCutoff extends StatelessWidget {
                       for (var i = 0; i < labels.length; i++)
                         FlSpot(i.toDouble(), values[i]),
                     ],
-                    color: Colors.indigo,
+                    color: Colors.deepPurple,
                     barWidth: 3,
                     dotData: const FlDotData(show: true),
                     belowBarData: BarAreaData(

@@ -63,7 +63,7 @@ class Basic22BarGradient extends StatelessWidget {
                           toY: values[i],
                           width: 22,
                           gradient: const LinearGradient(
-                            colors: [Colors.lightBlueAccent, Colors.indigo],
+                            colors: [Colors.indigoAccent, Colors.cyan],
                             begin: Alignment.bottomCenter,
                             end: Alignment.topCenter,
                           ),

@@ -7,16 +7,16 @@ class Basic43CandleAxis extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final spots = <CandlestickSpot>[
-      CandlestickSpot(x: 1, open: 102, high: 108, low: 100, close: 106),
-      CandlestickSpot(x: 2, open: 106, high: 110, low: 103, close: 104),
-      CandlestickSpot(x: 3, open: 104, high: 112, low: 103, close: 111),
-      CandlestickSpot(x: 4, open: 111, high: 113, low: 107, close: 108),
-      CandlestickSpot(x: 5, open: 108, high: 115, low: 107, close: 114),
-      CandlestickSpot(x: 6, open: 114, high: 118, low: 112, close: 116),
-      CandlestickSpot(x: 7, open: 116, high: 117, low: 110, close: 112),
-      CandlestickSpot(x: 8, open: 112, high: 121, low: 111, close: 120),
-      CandlestickSpot(x: 9, open: 120, high: 124, low: 116, close: 117),
-      CandlestickSpot(x: 10, open: 117, high: 126, low: 115, close: 125),
+      CandlestickSpot(x: 1, open: 105, high: 112, low: 103, close: 110),
+      CandlestickSpot(x: 2, open: 110, high: 114, low: 106, close: 107),
+      CandlestickSpot(x: 3, open: 107, high: 115, low: 105, close: 114),
+      CandlestickSpot(x: 4, open: 114, high: 117, low: 110, close: 111),
+      CandlestickSpot(x: 5, open: 111, high: 118, low: 109, close: 117),
+      CandlestickSpot(x: 6, open: 117, high: 121, low: 113, close: 115),
+      CandlestickSpot(x: 7, open: 115, high: 119, low: 112, close: 118),
+      CandlestickSpot(x: 8, open: 118, high: 124, low: 116, close: 123),
+      CandlestickSpot(x: 9, open: 123, high: 127, low: 120, close: 121),
+      CandlestickSpot(x: 10, open: 121, high: 128, low: 119, close: 126),
     ];
 
     Widget bottomTitle(double value, TitleMeta meta) {

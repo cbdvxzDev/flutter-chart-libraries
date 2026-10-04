@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class Advanced28ScatterLabels extends StatelessWidget {
   const Advanced28ScatterLabels({super.key});
 
-  static const names = ['A', 'B', 'C', 'D', 'E'];
+  static const names = ['Duna', 'Roca', 'Nube', 'Faro', 'Lago'];
 
   @override
   Widget build(BuildContext context) {
@@ -54,11 +54,11 @@ class Advanced28ScatterLabels extends StatelessWidget {
                   getLabelTextStyleFunction: _labelStyleOf,
                 ),
                 scatterSpots: [
-                  ScatterSpot(1, 1.5),
-                  ScatterSpot(2.2, 3.4),
-                  ScatterSpot(3.5, 2.6),
-                  ScatterSpot(4.4, 4.8),
-                  ScatterSpot(5.2, 1.2),
+                  ScatterSpot(0.8, 2.1),
+                  ScatterSpot(1.9, 4.3),
+                  ScatterSpot(2.7, 1.4),
+                  ScatterSpot(4.1, 3.6),
+                  ScatterSpot(5.4, 5.1),
                 ],
               ),
             ),
@@ -75,6 +75,6 @@ class Advanced28ScatterLabels extends StatelessWidget {
       TextStyle(
         fontSize: 12,
         fontWeight: FontWeight.bold,
-        color: Colors.indigo.shade800,
+        color: Colors.deepPurple.shade800,
       );
 }

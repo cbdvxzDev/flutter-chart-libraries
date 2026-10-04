@@ -7,9 +7,14 @@ class Basic31PieVariableRadius extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const labels = ['Móvil', 'Web', 'Tienda', 'Call center'];
-    const List<double> values = [45.0, 30, 15, 10];
+    const List<double> values = [48.0, 27, 15, 10];
     const List<double> radii = [95.0, 75, 58, 45];
-    const colors = [Colors.indigo, Colors.teal, Colors.orange, Colors.pink];
+    const colors = [
+      Colors.brown,
+      Colors.lightBlue,
+      Colors.deepOrange,
+      Colors.indigo,
+    ];
 
     return Scaffold(
       appBar: AppBar(title: const Text('31. Pastel con radios variables')),

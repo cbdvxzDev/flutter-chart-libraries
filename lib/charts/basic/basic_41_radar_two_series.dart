@@ -6,7 +6,7 @@ class Basic41RadarTwoSeries extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Velocidad', 'Potencia', 'Defensa', 'Resistencia', 'Agilidad'];
+    const labels = ['Idea', 'Diseño', 'Código', 'Pruebas', 'Entrega'];
 
     Widget legendItem(Color color, String label) {
       return Row(
@@ -62,8 +62,8 @@ class Basic41RadarTwoSeries extends StatelessWidget {
                           RadarEntry(value: 80),
                           RadarEntry(value: 70),
                         ],
-                        fillColor: Colors.indigo.withValues(alpha: 0.35),
-                        borderColor: Colors.indigo,
+                        fillColor: Colors.pink.withValues(alpha: 0.35),
+                        borderColor: Colors.pink,
                         borderWidth: 2,
                         entryRadius: 4,
                       ),
@@ -75,8 +75,8 @@ class Basic41RadarTwoSeries extends StatelessWidget {
                           RadarEntry(value: 58),
                           RadarEntry(value: 92),
                         ],
-                        fillColor: Colors.orange.withValues(alpha: 0.35),
-                        borderColor: Colors.orange,
+                        fillColor: Colors.deepPurple.withValues(alpha: 0.35),
+                        borderColor: Colors.deepPurple,
                         borderWidth: 2,
                         entryRadius: 4,
                       ),
@@ -90,8 +90,8 @@ class Basic41RadarTwoSeries extends StatelessWidget {
                 runSpacing: 8,
                 alignment: WrapAlignment.center,
                 children: [
-                  legendItem(Colors.indigo, 'Equipo A'),
-                  legendItem(Colors.orange, 'Equipo B'),
+                  legendItem(Colors.pink, 'Equipo A'),
+                  legendItem(Colors.deepPurple, 'Equipo B'),
                 ],
               ),
             ],

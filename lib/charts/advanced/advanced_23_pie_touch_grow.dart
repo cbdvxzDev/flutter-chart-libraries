@@ -9,13 +9,13 @@ class Advanced23PieTouchGrow extends StatefulWidget {
 }
 
 class _Advanced23PieTouchGrowState extends State<Advanced23PieTouchGrow> {
-  static const labels = ['Alimentación', 'Transporte', 'Vivienda', 'Otros'];
-  static const List<double> values = [35, 20, 28, 17];
+  static const labels = ['Fútbol', 'Baloncesto', 'Natación', 'Atletismo'];
+  static const List<double> values = [31, 28, 23, 18];
   static const colors = [
+    Colors.pink,
     Colors.indigo,
     Colors.teal,
-    Colors.orange,
-    Colors.pink,
+    Colors.deepOrange,
   ];
 
   int _touchedIndex = -1;

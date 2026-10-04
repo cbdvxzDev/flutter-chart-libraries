@@ -10,14 +10,14 @@ class Advanced15BarStackLabels extends StatefulWidget {
 }
 
 class _Advanced15BarStackLabelsState extends State<Advanced15BarStackLabels> {
-  static const groups = ['Web', 'App', 'Tienda', 'Call'];
-  static const segmentos = ['Suscripciones', 'Publicidad', 'Otros'];
-  static const colors = [Colors.indigo, Colors.teal, Colors.orange];
+  static const groups = ['Nuevos', 'Fieles', 'Inactivos', 'VIP'];
+  static const segmentos = ['Membresías', 'Publicidad', 'Servicios'];
+  static const colors = [Colors.cyan, Colors.amber, Colors.purple];
   static const List<List<double>> datos = [
-    [45, 30, 25],
-    [38, 42, 20],
-    [52, 22, 16],
-    [30, 28, 18],
+    [36, 41, 27],
+    [49, 25, 34],
+    [28, 37, 22],
+    [44, 19, 31],
   ];
 
   int? _grupo;

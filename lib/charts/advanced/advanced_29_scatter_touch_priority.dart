@@ -12,11 +12,11 @@ class Advanced29ScatterTouchPriority extends StatefulWidget {
 class _Advanced29ScatterTouchPriorityState
     extends State<Advanced29ScatterTouchPriority> {
   static const List<(double, double, double)> puntos = [
-    (1.5, 2.0, 12),
-    (3.0, 4.5, 18),
-    (5.5, 3.0, 26),
-    (5.8, 3.4, 10),
-    (7.2, 6.4, 16),
+    (1.2, 3.4, 14),
+    (2.9, 1.8, 20),
+    (4.7, 5.6, 26),
+    (5.0, 5.9, 9),
+    (7.6, 7.2, 16),
   ];
 
   int _tocado = -1;
@@ -95,8 +95,8 @@ class _Advanced29ScatterTouchPriorityState
                                   ? puntos[i].$3 + 6
                                   : puntos[i].$3,
                               color: _tocado == i
-                                  ? Colors.deepOrange
-                                  : Colors.indigo,
+                                  ? Colors.orange.shade800
+                                  : Colors.brown.shade600,
                               strokeWidth: _tocado == i ? 3 : 0,
                               strokeColor: Colors.white,
                             ),

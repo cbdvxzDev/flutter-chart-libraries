@@ -1,4 +1,4 @@
-﻿import 'package:fl_chart/fl_chart.dart';
+import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
 class Basic10LineTwoSeries extends StatelessWidget {
@@ -6,9 +6,9 @@ class Basic10LineTwoSeries extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'];
-    const List<double> ventas2024 = [42.0, 48, 45, 55, 52, 63];
-    const List<double> ventas2025 = [52.0, 58, 54, 68, 65, 78];
+    const labels = ['Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6'];
+    const List<double> ventas2024 = [47, 53, 58, 62, 70, 76];
+    const List<double> ventas2025 = [58, 64, 69, 75, 83, 88];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {
@@ -60,9 +60,9 @@ class Basic10LineTwoSeries extends StatelessWidget {
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  legendItem(Colors.indigo, 'Ventas 2024'),
+                  legendItem(Colors.blue, 'Ventas 2024'),
                   const SizedBox(width: 20),
-                  legendItem(Colors.teal, 'Ventas 2025'),
+                  legendItem(Colors.amber, 'Ventas 2025'),
                 ],
               ),
               const SizedBox(height: 16),
@@ -98,8 +98,8 @@ class Basic10LineTwoSeries extends StatelessWidget {
                       ),
                     ),
                     lineBarsData: [
-                      series(ventas2024, Colors.indigo),
-                      series(ventas2025, Colors.teal),
+                      series(ventas2024, Colors.blue),
+                      series(ventas2025, Colors.amber),
                     ],
                   ),
                 ),

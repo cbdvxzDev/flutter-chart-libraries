@@ -11,8 +11,8 @@ class Advanced12LineHighlightDots extends StatefulWidget {
 
 class _Advanced12LineHighlightDotsState
     extends State<Advanced12LineHighlightDots> {
-  static const labels = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'];
-  static const List<double> values = [42, 55, 48, 62, 57, 71];
+  static const labels = ['H1', 'H2', 'H3', 'H4', 'H5', 'H6'];
+  static const List<double> values = [59, 67, 63, 75, 71, 80];
 
   int? _touched;
 
@@ -104,7 +104,7 @@ class _Advanced12LineHighlightDotsState
                           for (var i = 0; i < labels.length; i++)
                             FlSpot(i.toDouble(), values[i]),
                         ],
-                        color: Colors.indigo,
+                        color: Colors.blue,
                         barWidth: 3,
                         dotData: FlDotData(
                           show: true,
@@ -124,7 +124,7 @@ class _Advanced12LineHighlightDotsState
                               radius: 6,
                               color: Colors.white,
                               strokeWidth: 3,
-                              strokeColor: Colors.indigo,
+                              strokeColor: Colors.blue,
                             );
                           },
                         ),

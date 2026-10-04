@@ -12,14 +12,14 @@ class Advanced35CandlestickPointIndicator extends StatefulWidget {
 class _Advanced35CandlestickPointIndicatorState
     extends State<Advanced35CandlestickPointIndicator> {
   static final List<CandlestickSpot> spots = [
-    CandlestickSpot(x: 0, open: 50, high: 56, low: 47, close: 54),
-    CandlestickSpot(x: 1, open: 54, high: 58, low: 50, close: 51),
-    CandlestickSpot(x: 2, open: 51, high: 62, low: 49, close: 60),
-    CandlestickSpot(x: 3, open: 60, high: 63, low: 55, close: 57),
-    CandlestickSpot(x: 4, open: 57, high: 74, low: 56, close: 72),
-    CandlestickSpot(x: 5, open: 72, high: 75, low: 66, close: 68),
-    CandlestickSpot(x: 6, open: 68, high: 79, low: 67, close: 77),
-    CandlestickSpot(x: 7, open: 77, high: 80, low: 71, close: 73),
+    CandlestickSpot(x: 0, open: 60, high: 66, low: 58, close: 65),
+    CandlestickSpot(x: 1, open: 65, high: 67, low: 59, close: 60),
+    CandlestickSpot(x: 2, open: 60, high: 68, low: 57, close: 67),
+    CandlestickSpot(x: 3, open: 67, high: 70, low: 63, close: 64),
+    CandlestickSpot(x: 4, open: 64, high: 71, low: 62, close: 70),
+    CandlestickSpot(x: 5, open: 70, high: 74, low: 67, close: 68),
+    CandlestickSpot(x: 6, open: 68, high: 73, low: 65, close: 72),
+    CandlestickSpot(x: 7, open: 72, high: 78, low: 70, close: 76),
   ];
 
   String _info = 'Toca una vela: el indicador punteado la sigue';

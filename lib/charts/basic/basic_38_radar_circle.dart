@@ -6,7 +6,7 @@ class Basic38RadarCircle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Velocidad', 'Potencia', 'Defensa', 'Resistencia', 'Agilidad'];
+    const labels = ['Dormitorio', 'Cocina', 'Baño', 'Salón', 'Jardín'];
 
     return Scaffold(
       appBar: AppBar(title: const Text('38. Radar circular')),
@@ -36,14 +36,14 @@ class Basic38RadarCircle extends StatelessWidget {
                 dataSets: [
                   RadarDataSet(
                     dataEntries: const [
-                      RadarEntry(value: 85),
-                      RadarEntry(value: 70),
-                      RadarEntry(value: 60),
-                      RadarEntry(value: 75),
-                      RadarEntry(value: 90),
+                      RadarEntry(value: 64),
+                      RadarEntry(value: 82),
+                      RadarEntry(value: 55),
+                      RadarEntry(value: 91),
+                      RadarEntry(value: 73),
                     ],
-                    fillColor: Colors.indigo.withValues(alpha: 0.4),
-                    borderColor: Colors.indigo,
+                    fillColor: Colors.cyan.withValues(alpha: 0.4),
+                    borderColor: Colors.cyan,
                     borderWidth: 2,
                     entryRadius: 4,
                   ),

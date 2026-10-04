@@ -9,8 +9,8 @@ class Advanced17BarNegative extends StatefulWidget {
 }
 
 class _Advanced17BarNegativeState extends State<Advanced17BarNegative> {
-  static const labels = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'];
-  static const List<double> values = [32, -18, 47, -52, 26, -35];
+  static const labels = ['B1', 'B2', 'B3', 'B4', 'B5', 'B6'];
+  static const List<double> values = [34, -22, 51, -46, 29, -15];
 
   static const double meta = 40;
   static const double alerta = -40;

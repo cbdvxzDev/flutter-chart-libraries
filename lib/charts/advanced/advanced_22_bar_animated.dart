@@ -9,9 +9,9 @@ class Advanced22BarAnimated extends StatefulWidget {
 }
 
 class _Advanced22BarAnimatedState extends State<Advanced22BarAnimated> {
-  static const labels = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'];
-  static const List<double> semester1 = [42, 55, 48, 62, 57, 71];
-  static const List<double> semester2 = [71, 49, 82, 40, 90, 63];
+  static const labels = ['P1', 'P2', 'P3', 'P4', 'P5', 'P6'];
+  static const List<double> semester1 = [37, 64, 49, 72, 58, 81];
+  static const List<double> semester2 = [68, 44, 90, 53, 77, 62];
 
   bool _secondHalf = false;
 
@@ -78,7 +78,7 @@ class _Advanced22BarAnimatedState extends State<Advanced22BarAnimated> {
                             BarChartRodData(
                               toY: values[i],
                               width: 20,
-                              color: Colors.indigo,
+                              color: Colors.amber.shade700,
                               borderRadius: const BorderRadius.vertical(
                                 top: Radius.circular(6),
                               ),

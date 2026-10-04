@@ -27,34 +27,34 @@ class Basic36ScatterShapes extends StatelessWidget {
 
     final spots = <ScatterSpot>[
       ScatterSpot(
-        12,
-        18,
-        dotPainter: FlDotCirclePainter(radius: 9, color: Colors.indigo),
+        16,
+        24,
+        dotPainter: FlDotCirclePainter(radius: 9, color: Colors.pink.shade600),
       ),
       ScatterSpot(
-        28,
-        40,
-        dotPainter: FlDotSquarePainter(size: 14, color: Colors.teal),
+        31,
+        47,
+        dotPainter: FlDotSquarePainter(size: 14, color: Colors.cyan.shade700),
       ),
       ScatterSpot(
-        45,
-        26,
-        dotPainter: FlDotCrossPainter(size: 16, color: Colors.orange),
+        49,
+        33,
+        dotPainter: FlDotCrossPainter(size: 16, color: Colors.amber.shade800),
       ),
       ScatterSpot(
-        58,
-        62,
-        dotPainter: FlDotCirclePainter(radius: 9, color: Colors.indigo),
+        63,
+        68,
+        dotPainter: FlDotCirclePainter(radius: 9, color: Colors.pink.shade600),
       ),
       ScatterSpot(
-        72,
-        48,
-        dotPainter: FlDotSquarePainter(size: 14, color: Colors.teal),
+        78,
+        52,
+        dotPainter: FlDotSquarePainter(size: 14, color: Colors.cyan.shade700),
       ),
       ScatterSpot(
-        86,
-        74,
-        dotPainter: FlDotCrossPainter(size: 16, color: Colors.orange),
+        91,
+        81,
+        dotPainter: FlDotCrossPainter(size: 16, color: Colors.amber.shade800),
       ),
     ];
 
@@ -111,15 +111,24 @@ class Basic36ScatterShapes extends StatelessWidget {
                 alignment: WrapAlignment.center,
                 children: [
                   _LegendItem(
-                    painter: FlDotCirclePainter(radius: 7, color: Colors.indigo),
+                    painter: FlDotCirclePainter(
+                      radius: 7,
+                      color: Colors.pink.shade600,
+                    ),
                     label: 'Círculo',
                   ),
                   _LegendItem(
-                    painter: FlDotSquarePainter(size: 12, color: Colors.teal),
+                    painter: FlDotSquarePainter(
+                      size: 12,
+                      color: Colors.cyan.shade700,
+                    ),
                     label: 'Cuadrado',
                   ),
                   _LegendItem(
-                    painter: FlDotCrossPainter(size: 14, color: Colors.orange),
+                    painter: FlDotCrossPainter(
+                      size: 14,
+                      color: Colors.amber.shade800,
+                    ),
                     label: 'Cruz',
                   ),
                 ],

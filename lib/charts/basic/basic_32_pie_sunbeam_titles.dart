@@ -7,8 +7,14 @@ class Basic32PieSunbeamTitles extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const labels = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo'];
-    const List<double> values = [22.0, 26, 18, 20, 14];
-    const colors = [Colors.indigo, Colors.teal, Colors.orange, Colors.pink, Colors.deepPurple];
+    const List<double> values = [24.0, 21, 19, 20, 16];
+    const colors = [
+      Colors.teal,
+      Colors.pink,
+      Colors.blue,
+      Colors.green,
+      Colors.deepPurple,
+    ];
 
     return Scaffold(
       appBar: AppBar(title: const Text('32. Pastel con títulos rotados')),

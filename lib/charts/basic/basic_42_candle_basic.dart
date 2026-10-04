@@ -8,14 +8,14 @@ class Basic42CandleBasic extends StatelessWidget {
   Widget build(BuildContext context) {
     const labels = ['Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Lun', 'Mar', 'Mié'];
     final spots = <CandlestickSpot>[
-      CandlestickSpot(x: 1, open: 102, high: 108, low: 100, close: 106),
-      CandlestickSpot(x: 2, open: 106, high: 110, low: 103, close: 104),
-      CandlestickSpot(x: 3, open: 104, high: 112, low: 103, close: 111),
-      CandlestickSpot(x: 4, open: 111, high: 113, low: 107, close: 108),
-      CandlestickSpot(x: 5, open: 108, high: 115, low: 107, close: 114),
-      CandlestickSpot(x: 6, open: 114, high: 118, low: 112, close: 116),
-      CandlestickSpot(x: 7, open: 116, high: 117, low: 110, close: 112),
-      CandlestickSpot(x: 8, open: 112, high: 121, low: 111, close: 120),
+      CandlestickSpot(x: 1, open: 88, high: 94, low: 86, close: 93),
+      CandlestickSpot(x: 2, open: 93, high: 96, low: 89, close: 90),
+      CandlestickSpot(x: 3, open: 90, high: 97, low: 88, close: 96),
+      CandlestickSpot(x: 4, open: 96, high: 99, low: 92, close: 94),
+      CandlestickSpot(x: 5, open: 94, high: 101, low: 93, close: 100),
+      CandlestickSpot(x: 6, open: 100, high: 103, low: 97, close: 98),
+      CandlestickSpot(x: 7, open: 98, high: 105, low: 96, close: 104),
+      CandlestickSpot(x: 8, open: 104, high: 109, low: 102, close: 107),
     ];
 
     Widget bottomTitle(double value, TitleMeta meta) {

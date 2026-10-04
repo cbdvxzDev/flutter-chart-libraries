@@ -6,8 +6,8 @@ class Advanced14BarErrorRange extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Ana', 'Luis', 'Marta', 'Diego', 'Sofía'];
-    const List<double> values = [72, 58, 85, 64, 79];
+    const labels = ['Álgebra', 'Cálculo', 'Física', 'Química', 'Historia'];
+    const List<double> values = [77, 61, 90, 53, 68];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {
@@ -74,7 +74,7 @@ class Advanced14BarErrorRange extends StatelessWidget {
                         BarChartRodData(
                           toY: values[i],
                           width: 18,
-                          color: Colors.indigo,
+                          color: Colors.blueGrey,
                           toYErrorRange: FlErrorRange(
                             lowerBy: 5 + i.toDouble(),
                             upperBy: 12 - i.toDouble(),

@@ -18,9 +18,9 @@ class _Advanced31RadarGradientState extends State<Advanced31RadarGradient> {
     [55, 75, 70, 60, 85, 40],
   ];
   static const degradados = [
-    [Color(0xFF7986CB), Color(0xFF0D47A1)],
-    [Color(0xFF4DB6AC), Color(0xFF00695C)],
-    [Color(0xFFB39DDB), Color(0xFF4A148C)],
+    [Color(0xFFFFCDD2), Color(0xFFB71C1C)],
+    [Color(0xFFC8E6C9), Color(0xFF1B5E20)],
+    [Color(0xFFFFF9C4), Color(0xFFF57F17)],
   ];
 
   int _escenario = 0;

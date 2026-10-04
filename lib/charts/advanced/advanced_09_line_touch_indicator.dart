@@ -6,8 +6,8 @@ class Advanced09LineTouchIndicator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'];
-    const List<double> values = [42, 55, 48, 62, 57, 71];
+    const labels = ['U1', 'U2', 'U3', 'U4', 'U5', 'U6'];
+    const List<double> values = [38, 52, 66, 59, 74, 68];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {
@@ -90,7 +90,7 @@ class Advanced09LineTouchIndicator extends StatelessWidget {
                       for (var i = 0; i < labels.length; i++)
                         FlSpot(i.toDouble(), values[i]),
                     ],
-                    color: Colors.indigo,
+                    color: Colors.lightBlue,
                     barWidth: 3,
                     dotData: const FlDotData(show: true),
                   ),

@@ -6,8 +6,8 @@ class Basic04LineAreaAbove extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'];
-    const List<double> values = [45.0, 62, 58, 75, 88, 70];
+    const labels = ['Feb', 'Abr', 'Jun', 'Ago', 'Oct', 'Dic'];
+    const List<double> values = [38, 54, 66, 71, 82, 93];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {

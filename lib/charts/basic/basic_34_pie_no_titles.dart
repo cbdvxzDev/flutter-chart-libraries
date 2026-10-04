@@ -7,10 +7,10 @@ class Basic34PieNoTitles extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const sections = [
-      ('Producto A', 34.0, Colors.indigo),
-      ('Producto B', 28.0, Colors.teal),
-      ('Producto C', 22.0, Colors.orange),
-      ('Producto D', 16.0, Colors.pink),
+      ('Producto A', 41.0, Colors.lightBlue),
+      ('Producto B', 25.0, Colors.lime),
+      ('Producto C', 20.0, Colors.pink),
+      ('Producto D', 14.0, Colors.brown),
     ];
 
     return Scaffold(

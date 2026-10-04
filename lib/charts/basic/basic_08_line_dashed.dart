@@ -6,8 +6,8 @@ class Basic08LineDashed extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'];
-    const List<double> values = [15.0, 22, 19, 28, 24, 33];
+    const labels = ['D1', 'D2', 'D3', 'D4', 'D5', 'D6'];
+    const List<double> values = [12, 20, 17, 26, 23, 31];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {

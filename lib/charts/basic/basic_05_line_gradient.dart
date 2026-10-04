@@ -6,8 +6,8 @@ class Basic05LineGradient extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'];
-    const List<double> values = [30.0, 45, 40, 62, 58, 75];
+    const labels = ['06:00', '08:00', '10:00', '12:00', '14:00', '16:00'];
+    const List<double> values = [22, 37, 48, 55, 63, 71];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {
@@ -66,7 +66,7 @@ class Basic05LineGradient extends StatelessWidget {
                     barWidth: 4,
                     gradientArea: LineChartGradientArea.wholeChart,
                     gradient: const LinearGradient(
-                      colors: [Colors.indigoAccent, Colors.indigo],
+                      colors: [Colors.lightBlue, Colors.cyan],
                       begin: Alignment.centerLeft,
                       end: Alignment.centerRight,
                     ),
@@ -74,8 +74,8 @@ class Basic05LineGradient extends StatelessWidget {
                       show: true,
                       gradient: LinearGradient(
                         colors: [
-                          Colors.indigo.withValues(alpha: 0.35),
-                          Colors.indigo.withValues(alpha: 0.02),
+                          Colors.cyan.withValues(alpha: 0.35),
+                          Colors.cyan.withValues(alpha: 0.02),
                         ],
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,

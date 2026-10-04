@@ -6,8 +6,8 @@ class Basic30PieStartOffset extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const List<double> values = [35.0, 25, 25, 15];
-    const colors = [Colors.indigo, Colors.teal, Colors.orange, Colors.pink];
+    const List<double> values = [29.0, 26, 25, 20];
+    const colors = [Colors.red, Colors.green, Colors.purple, Colors.teal];
 
     return Scaffold(
       appBar: AppBar(title: const Text('30. Pastel con inicio rotado (45°)')),

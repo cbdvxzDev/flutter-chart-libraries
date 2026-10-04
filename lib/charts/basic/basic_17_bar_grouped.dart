@@ -6,9 +6,9 @@ class Basic17BarGrouped extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const labels = ['Q1', 'Q2', 'Q3', 'Q4'];
-    const List<double> presencial = [38, 45, 52, 61];
-    const List<double> online = [25, 34, 41, 55];
+    const labels = ['T1', 'T2', 'T3', 'T4'];
+    const List<double> presencial = [34, 47, 56, 64];
+    const List<double> online = [22, 31, 44, 58];
 
     Widget bottomTitle(double value, TitleMeta meta) {
       if (value < 0 || value >= labels.length || value % 1 != 0) {
@@ -63,12 +63,12 @@ class Basic17BarGrouped extends StatelessWidget {
                       barRods: [
                         BarChartRodData(
                           toY: presencial[i],
-                          color: Colors.indigo,
+                          color: Colors.teal,
                           width: 12,
                         ),
                         BarChartRodData(
                           toY: online[i],
-                          color: Colors.teal,
+                          color: Colors.purple,
                           width: 12,
                         ),
                       ],
