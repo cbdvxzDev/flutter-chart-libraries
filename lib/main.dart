@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'grafos_gallery.dart';
 
 import 'charts/basic/basic_01_line_simple.dart';
 import 'charts/basic/basic_02_line_curved.dart';
@@ -195,6 +196,13 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('FL Chart — Taller'),
         centerTitle: true,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.account_tree),
+            tooltip: 'Grafos dirigidos (directed_graph)',
+            onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const GrafosGalleryPage())),
+          ),
+        ],
       ),
       body: ListView(
         padding: const EdgeInsets.symmetric(vertical: 8),

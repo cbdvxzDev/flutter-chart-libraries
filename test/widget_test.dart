@@ -1,6 +1,8 @@
 import 'package:fl_chart/fl_chart.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
+import 'package:fl_chart_taller/charts_grafo/simples/catalogo_simples.dart';
 import 'package:fl_chart_taller/main.dart';
 
 void main() {
@@ -34,5 +36,27 @@ void main() {
 
     expect(find.text('01. Área entre dos series'), findsOneWidget);
     expect(find.byType(LineChart), findsOneWidget);
+  });
+
+  testWidgets('abre la galería de grafos dirigidos', (tester) async {
+    await tester.pumpWidget(const FlChartTallerApp());
+
+    await tester.tap(find.byIcon(Icons.account_tree));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Atlas de Grafos Dirigidos'), findsOneWidget);
+    expect(find.text('Gráficos básicos'), findsOneWidget);
+    expect(find.text('Gráficos avanzados'), findsOneWidget);
+  });
+
+  testWidgets('navega al catálogo de grafos básicos', (tester) async {
+    await tester.pumpWidget(const FlChartTallerApp());
+
+    await tester.tap(find.byIcon(Icons.account_tree));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Gráficos básicos'));
+    await tester.pumpAndSettle();
+
+    expect(find.text(simpleCharts.first.title), findsOneWidget);
   });
 }
