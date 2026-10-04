@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'financial_gallery.dart';
+
 import 'charts/basic/basic_01_line_simple.dart';
 import 'charts/basic/basic_02_line_curved.dart';
 import 'charts/basic/basic_03_line_area_below.dart';
@@ -195,6 +197,16 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('FL Chart — Taller'),
         centerTitle: true,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.candlestick_chart),
+            tooltip: 'Gráficas financieras (financial_chart)',
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute<void>(builder: (_) => const FinancialGalleryPage()),
+            ),
+          ),
+        ],
       ),
       body: ListView(
         padding: const EdgeInsets.symmetric(vertical: 8),
