@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'charts_gallery.dart';
-import 'grafos_gallery.dart';
 
-import 'financial_gallery.dart';
+import 'gallery/unified_gallery_page.dart';
 
 import 'charts/basic/basic_01_line_simple.dart';
 import 'charts/basic/basic_02_line_curved.dart';
@@ -193,114 +191,7 @@ class HomeScreen extends StatelessWidget {
     ('Velas con anotaciones de rango', (_) => const Advanced36CandlestickRangeAnnotation()),
   ];
 
+  /// La app abre en la galería unificada de las cuatro librerías.
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('FL Chart — Taller'),
-        centerTitle: true,
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.bar_chart),
-            tooltip: 'Galería de gráficas',
-            onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const ChartsGalleryPage())),
-          ),
-          IconButton(
-            icon: const Icon(Icons.account_tree),
-            tooltip: 'Grafos dirigidos (directed_graph)',
-            onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const GrafosGalleryPage())),
-          ),
-          IconButton(
-            icon: const Icon(Icons.candlestick_chart),
-            tooltip: 'Gráficas financieras (financial_chart)',
-            onPressed: () => Navigator.push(
-              context,
-              MaterialPageRoute<void>(builder: (_) => const FinancialGalleryPage()),
-            ),
-          ),
-        ],
-      ),
-      body: ListView(
-        padding: const EdgeInsets.symmetric(vertical: 8),
-        children: [
-          const _SectionHeader(
-            title: 'Básicas (43)',
-            subtitle: 'Líneas, barras, pastel, dispersión, radar y velas',
-          ),
-          for (var i = 0; i < basicCharts.length; i++)
-            ListTile(
-              leading: CircleAvatar(
-                radius: 16,
-                child: Text(
-                  '${i + 1}'.padLeft(2, '0'),
-                  style: const TextStyle(fontSize: 12),
-                ),
-              ),
-              title: Text(basicCharts[i].$1),
-              trailing: const Icon(Icons.chevron_right),
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute<void>(
-                    builder: basicCharts[i].$2,
-                  ),
-                );
-              },
-            ),
-          const _SectionHeader(
-            title: 'Avanzadas (36)',
-            subtitle: 'Líneas, barras, pastel, dispersión, radar y velas con interacción',
-          ),
-          for (var i = 0; i < advancedCharts.length; i++)
-            ListTile(
-              leading: CircleAvatar(
-                radius: 16,
-                backgroundColor: Theme.of(context).colorScheme.primaryContainer,
-                child: Text(
-                  '${i + 1}'.padLeft(2, '0'),
-                  style: const TextStyle(fontSize: 12),
-                ),
-              ),
-              title: Text(advancedCharts[i].$1),
-              trailing: const Icon(Icons.chevron_right),
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute<void>(
-                    builder: advancedCharts[i].$2,
-                  ),
-                );
-              },
-            ),
-        ],
-      ),
-    );
-  }
-}
-
-class _SectionHeader extends StatelessWidget {
-  const _SectionHeader({required this.title, required this.subtitle});
-
-  final String title;
-  final String subtitle;
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(16, 16, 16, 4),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(title, style: theme.textTheme.titleMedium),
-          const SizedBox(height: 2),
-          Text(
-            subtitle,
-            style: theme.textTheme.bodySmall?.copyWith(
-              color: theme.colorScheme.onSurfaceVariant,
-            ),
-          ),
-          const SizedBox(height: 8),
-        ],
-      ),
-    );
-  }
+  Widget build(BuildContext context) => const UnifiedGalleryPage();
 }
