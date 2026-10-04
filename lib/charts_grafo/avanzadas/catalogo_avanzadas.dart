@@ -480,12 +480,32 @@ Widget _dashboard() => DashboardSincronizado(info: _info);
 Widget _zoom() => ZoomDesplazamiento(edges: _g);
 Widget _realTime() => TiempoReal(edges: _g);
 
+// ---------------------------------------------------------------- 27 a 36
+// Combinaciones de dos vistas ya existentes, una junto a la otra.
+Widget _par(String ta, Widget Function() a, String tb, Widget Function() b) =>
+    SideBySide([Titled(ta, a()), Titled(tb, b())]);
+
+Widget _cyclesScc() => _par('Ciclos', _cycles, 'Componentes', _sccView);
+Widget _layeredCritical() =>
+    _par('Layout por capas', _layered, 'Ruta crítica', _critical);
+Widget _sankeyChord() => _par('Sankey', _sankey, 'Cuerdas', _chord);
+Widget _sunTree() => _par('Sunburst', _sunburst, 'Treemap', _hierTreemap);
+Widget _forceSpan() => _par('Fuerzas', _force, 'Árbol de expansión', _spanning);
+Widget _boxViolin() => _par('Boxplot', _boxplot, 'Violín', _violin);
+Widget _parMatrix() =>
+    _par('Coordenadas paralelas', _parallel, 'Matriz de dispersión', _scatterMatrix);
+Widget _streamDist() =>
+    _par('Streamgraph', _stream, 'Distancias', _distances);
+Widget _flowGantt() => _par('Flujo de proceso', _flowchart, 'Gantt', _gantt);
+Widget _topoSun() => _par('Orden topológico', _topoLayers, 'Sunburst', _sunburst);
+
 // ------------------------------------------------------------------ catalogo
 const _alg = 'Algoritmos sobre el grafo';
 const _lay = 'Layouts';
 const _flu = 'Flujo y jerarquía';
 const _est = 'Estadísticas';
 const _int = 'Interactivas';
+const _com = 'Combinadas';
 
 ChartEntry _e(int n, String g, String t, String d, String u, Widget Function() b) {
   final x = advancedDetails[n];
@@ -581,4 +601,34 @@ final List<ChartEntry> advancedCharts = [
   _e(26, _int, 'Tiempo real',
       'Un grafo que crece arista por arista con sus métricas en vivo.',
       'Monitorear una red que cambia: conexiones nuevas, densidad, componentes.', _realTime),
+  _e(27, _com, 'Ciclos + componentes fuertes',
+      'El ciclo en rojo junto a las componentes de colores del mismo grafo.',
+      'Confirmar que un ciclo detectado es realmente un grupo cerrado.', _cyclesScc),
+  _e(28, _com, 'Capas + ruta crítica',
+      'El grafo por capas junto al Gantt con las tareas sin holgura.',
+      'Ver a la vez la estructura de un proyecto y su calendario.', _layeredCritical),
+  _e(29, _com, 'Sankey + cuerdas',
+      'El mismo flujo como bandas por capas y como cintas en círculo.',
+      'Comparar dos formas de leer quién envía cuánto a quién.', _sankeyChord),
+  _e(30, _com, 'Sunburst + treemap',
+      'La misma jerarquía como anillos y como rectángulos anidados.',
+      'Elegir entre ver profundidad (anillos) o peso (áreas).', _sunTree),
+  _e(31, _com, 'Fuerzas + árbol de expansión',
+      'La red completa junto al esqueleto que la mantiene conectada.',
+      'Saber qué conexiones sobran si solo importa que todo esté enlazado.', _forceSpan),
+  _e(32, _com, 'Boxplot + violín',
+      'Resumen de cuartiles y forma de la distribución de los mismos pesos.',
+      'Comprobar si el resumen estadístico esconde la forma real de los datos.', _boxViolin),
+  _e(33, _com, 'Paralelas + matriz de dispersión',
+      'Perfiles de vértices y relaciones entre métricas, lado a lado.',
+      'Pasar de comparar nodos a entender qué métricas se mueven juntas.', _parMatrix),
+  _e(34, _com, 'Streamgraph + distancias',
+      'Cómo se expande el alcance y qué tan lejos queda cada par de vértices.',
+      'Relacionar la propagación desde un origen con las distancias de la red.', _streamDist),
+  _e(35, _com, 'Flujo de proceso + Gantt',
+      'Los pasos como diagrama de flujo y como calendario de tareas.',
+      'Explicar un proceso y su duración con las mismas dependencias.', _flowGantt),
+  _e(36, _com, 'Orden topológico + sunburst',
+      'Las capas de dependencia junto a los saltos desde un origen.',
+      'Contrastar «qué va antes» con «qué tan lejos llega» un vértice.', _topoSun),
 ];

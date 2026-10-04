@@ -137,4 +137,54 @@ const Map<int, ChartDetail> advancedDetails = {
     ['WeightedDirectedGraph', 'weightedEdges'],
     'Las métricas no se guardan: se recalculan sobre el grafo cada vez que cambia. Muestra cómo se verían los indicadores de una red real que recibe conexiones nuevas.',
   ),
+  27: ChartDetail(
+    'Dos lecturas del mismo grafo. A la izquierda, las aristas que están en un ciclo (f → i, i → k, k → f y el bucle l → l) en rojo. A la derecha, las componentes fuertemente conexas, cada una con su color. El ciclo f → i → k → f aparece como la única componente con varios vértices, así que las dos vistas se confirman entre sí.',
+    ['WeightedDirectedGraph', 'weightedEdges'],
+    'Cada vista sola responde una pregunta distinta (qué aristas cierran un ciclo, qué vértices se alcanzan entre sí). Juntas muestran que son dos formas de ver la misma propiedad del grafo.',
+  ),
+  28: ChartDetail(
+    'A la izquierda, el layout por capas, con la arista que cierra el ciclo punteada. A la derecha, el Gantt con la ruta crítica en rojo y la holgura de las demás tareas. Ambas salen del mismo grafo acíclico, una vez omitidas las aristas que cierran ciclos.',
+    ['WeightedDirectedGraph', 'weightedEdges', 'outDegree'],
+    'Un Gantt no dice por qué una tarea espera a otra; el grafo sí. Verlos juntos conecta la causa (la dependencia) con el efecto (la fecha).',
+  ),
+  29: ChartDetail(
+    'El mismo grafo ponderado como Sankey (bandas entre columnas de capas) y como diagrama de cuerdas (cintas entre arcos en un círculo). En ambos el grosor es el peso de la arista.',
+    ['WeightedDirectedGraph', 'weightedEdges'],
+    'El Sankey ordena el flujo de izquierda a derecha; las cuerdas muestran todos los cruces a la vez. Cambiar de una a otra no requiere recalcular nada: ambas leen los mismos pesos.',
+  ),
+  30: ChartDetail(
+    'La misma jerarquía, un bosque de expansión, dibujada como sunburst (cada anillo es un salto desde el origen) y como treemap (el área es el peso). Los dos se construyen con el mismo recorrido del grafo.',
+    ['WeightedDirectedGraph', 'weightedEdges'],
+    'El sunburst da prioridad a la profundidad y el treemap a la proporción. Poner los dos juntos deja ver qué información sacrifica cada uno.',
+  ),
+  31: ChartDetail(
+    'A la izquierda, el layout de fuerzas con todas las aristas. A la derecha, el árbol de expansión que conecta todos los vértices con las aristas más ligeras. Se ve cuántas conexiones se podrían quitar sin dejar vértices aislados.',
+    ['WeightedDirectedGraph', 'weightedEdges'],
+    'Un diagrama de red normal solo muestra lo que existe. Aquí se calcula además el mínimo necesario y se dibuja al lado, para comparar lo que hay con lo que bastaría.',
+  ),
+  32: ChartDetail(
+    'Los mismos pesos de aristas, agrupados igual, en un boxplot (mediana, cuartiles y atípicos) y en un violín (forma completa de la distribución). Con pocos datos por grupo, el boxplot resume y el violín enseña cómo se reparten.',
+    ['WeightedDirectedGraph', 'weightedEdges'],
+    'Es la comparación clásica entre un resumen y una distribución. Los datos no se escriben a mano: salen de los pesos de las aristas del grafo.',
+  ),
+  33: ChartDetail(
+    'A la izquierda, coordenadas paralelas: una línea por vértice cruzando cinco métricas. A la derecha, la matriz de dispersión con tres de esas métricas cruzadas por parejas. Sirve para pasar de comparar vértices a ver qué métricas se mueven juntas.',
+    ['WeightedDirectedGraph', 'weightedEdges', 'outDegree'],
+    'Las métricas (grados, pesos, alcance) se calculan sobre la estructura del grafo; no son columnas de una tabla que alguien preparó antes.',
+  ),
+  34: ChartDetail(
+    'A la izquierda, el streamgraph con cuántos vértices se alcanzan en cada salto desde varios orígenes. A la derecha, el mapa de calor con el costo del camino más ligero entre cada par. La primera vista cuenta alcance; la segunda, costo.',
+    ['WeightedDirectedGraph', 'weightedEdges'],
+    'Alcance y distancia suelen medirse por separado. Aquí salen del mismo grafo y se ven juntos, así que se nota cuándo un vértice llega lejos en saltos pero a costo alto.',
+  ),
+  35: ChartDetail(
+    'Los mismos pasos como diagrama de flujo (óvalos, rombos y rectángulos) y como Gantt. Ambos usan las dependencias del grafo, omitiendo las aristas que cierran ciclos.',
+    ['WeightedDirectedGraph', 'weightedEdges', 'outDegree'],
+    'El diagrama de flujo explica el orden lógico y el Gantt la duración. Si cambias una arista del grafo, se actualizan los dos.',
+  ),
+  36: ChartDetail(
+    'A la izquierda, el orden topológico en capas; a la derecha, el sunburst por saltos desde un origen. Una capa responde «qué debe estar hecho antes» y un anillo «qué tan lejos queda del origen».',
+    ['WeightedDirectedGraph', 'weightedEdges'],
+    'Dos nociones de «distancia» en un grafo dirigido (precedencia y número de saltos) que en una gráfica normal no existen y que aquí salen de la misma estructura.',
+  ),
 };
