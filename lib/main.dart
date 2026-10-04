@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'charts_gallery.dart';
-
+import 'grafos_gallery.dart';
 
 import 'charts/basic/basic_01_line_simple.dart';
 import 'charts/basic/basic_02_line_curved.dart';
@@ -202,6 +202,11 @@ class HomeScreen extends StatelessWidget {
             icon: const Icon(Icons.bar_chart),
             tooltip: 'Galería de gráficas',
             onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const ChartsGalleryPage())),
+          ),
+          IconButton(
+            icon: const Icon(Icons.account_tree),
+            tooltip: 'Grafos dirigidos (directed_graph)',
+            onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const GrafosGalleryPage())),
           ),
         ],
       ),
